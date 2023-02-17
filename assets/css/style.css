@@ -365,8 +365,18 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 60px 0 0 0;
   overflow: hidden;
+}
+
+.img-fluidd{
+  width: auto;
+  height: auto;
+  padding:0;
+  max-width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding-left: 0rem;
 }
 
 .section-title {
@@ -418,6 +428,7 @@ section {
   font-weight: 700;
   font-size: 26px;
   color: #728394;
+  margin-top: 4rem;
 }
 
 .about .content ul {
@@ -449,6 +460,51 @@ section {
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
+
+.facts-title {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top:0;
+  margin-top: 0;
+  border-top:0;
+}
+
+.facts-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+
+.facts-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.facts-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0563bb;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.facts-title p {
+  margin-bottom: 0;
+}
+
 .facts .count-box {
   padding: 30px 30px 25px 30px;
   margin-top: 30px;
