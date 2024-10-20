@@ -1,0 +1,152 @@
+
+body {
+    background-color: black;
+}
+
+.title {
+    text-align: center;
+    padding-top: 2rem;
+    color: white;
+}
+
+.bottom-text {
+    text-align: center;
+    padding-top: 2rem;
+    color: white;
+}
+
+.center {
+    margin: auto;
+    padding-left: 22rem;
+}
+
+#blow {
+    color: white;
+}
+
+
+/** FLAME **/
+.container {
+    margin: 80px auto;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    transform-origin: center bottom;
+    animation: flame 3ms 200ms ease-in infinite alternate;
+    
+}
+
+.flame-out {
+    animation: flame-out 1.5s forwards;
+}
+
+.flame {
+    bottom: 0;
+    position: absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(-45deg) scale(1.5, 1.5);
+}
+
+.yellow {
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background: #ffd700;
+    box-shadow: 0px 0px 9px 4px #ffd700;
+}
+
+.orange {
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background: #ffa500;
+    box-shadow: 0px 0px 9px 4px #ffa500;
+}
+
+.red {
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background: #ff4500;
+    box-shadow: 0px 0px 9px 4px #ff4500;
+}
+
+.white {
+    left: 15px;
+    bottom: -4px;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 9px 4px #ffffff;
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.blue {
+    left: 25px;
+    bottom: -25px;
+    width: 10px;
+    height: 10px;
+    background: #6a5acd;
+    box-shadow: 0px 0px 9px 4px #6a5acd;
+}
+
+.black {
+    left: 10px;
+    bottom: -65px;
+    width: 40px;
+    height: 40px;
+    background: #000000;
+    box-shadow: 0px 0px 9px 4px #000000;
+}
+
+@keyframes flame {
+    0% {
+        transform: rotate(-1deg);
+    }
+    20% {
+        transform: rotate(1deg);
+    }
+    40% {
+        transform: rotate(-1deg);
+    }
+    60% {
+        transform: rotate(1deg) scaleY(1.04);
+    }
+    80% {
+        transform: rotate(-2deg) scaleY(0.92);
+    }
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+@keyframes flame-out {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    5% {
+        transform: scale(0.18);
+    }
+    10% {
+        transform: scale(0.68);
+    }
+    15% {
+        transform: scale(0.11);
+        opacity: 0.2;
+    }
+    50% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
