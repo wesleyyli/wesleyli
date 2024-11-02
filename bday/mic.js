@@ -1,6 +1,7 @@
 window.onload=function(){
     const heading = document.getElementById("start-button");
     heading?.addEventListener("click", init);
+    var x = document.getElementById("song");
 
     async function init() {
         const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
@@ -11,6 +12,7 @@ window.onload=function(){
 
         const pcmData = new Float32Array(analyserNode.fftSize);
         const onFrame = () => {
+            x.play();
             analyserNode.getFloatTimeDomainData(pcmData);
             let sumSquares = 0.0;
             for (const amplitude of pcmData) { sumSquares += amplitude*amplitude; }

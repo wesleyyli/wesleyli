@@ -18,9 +18,13 @@
 </head>
 
 <body>
+  <audio id="song">
+    <source src="happybirthday.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+
+  <h1 class="title">Happy Birthday Amanda!</h1>
   
-  <h1 class="title">Happy Birthday _____!</h1>
-  <button id="start-button">CLick Here to Start</button>
   <!-- <div class="container"></div>
     <div class="red flame"></div>
     <div class="orange flame"></div>
@@ -30,15 +34,24 @@
     <div class="black circle"></div>
   </div>
   <img class="center" src="cake.png"> -->
-  <div class="container candle" id="candle1">
-    <div class="red flame"></div>
-    <div class="orange flame"></div>
-    <div class="yellow flame"></div>
-    <div class="white flame"></div>
-    <div class="blue circle"></div>
-    <div class="black circle"></div>
+  <div>
+    <div class="container candle" id="candle1">
+      <div class="red flame"></div>
+      <div class="orange flame"></div>
+      <div class="yellow flame"></div>
+      <div class="white flame"></div>
+      <div class="blue circle"></div>
+      <div class="black circle"></div>
+    </div>
+    <img id="cake" src="cakeCrop.png">
   </div>
+  
+  
   <h1 class="bottom-text">Blow out the candles!</h1>
-  <meter id="volumeMeter" high="0.25" max="1" value="0.0"></meter>
-  <p id="blow">false</p>
+  <button id="start-button" class="centered">Click Here to Start</button>
+  <div class="hidden">
+    <meter id="volumeMeter" high="0.25" max="1" value="0.0"></meter>
+    <p id="blow" >false</p>
+  </div>
+  
 </body>
