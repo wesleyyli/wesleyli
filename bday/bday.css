@@ -31,6 +31,7 @@ body {
 .centered {
     margin: auto;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
 }
@@ -129,9 +130,7 @@ body {
 }
 
 @media screen and (max-width: 1170px) {
-    body{
-        width: 200%;
-    }
+    
 }
 
 @keyframes flame {
