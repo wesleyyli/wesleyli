@@ -12,6 +12,7 @@ window.onload=function(){
 
         const pcmData = new Float32Array(analyserNode.fftSize);
         const onFrame = () => {
+            x.loop = false;
             x.play();
             analyserNode.getFloatTimeDomainData(pcmData);
             let sumSquares = 0.0;
