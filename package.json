@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "jquery": "^3.7.1",
     "web-audio-api": "^0.2.2"
   }
 }
