@@ -2,7 +2,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     background-color: #fae1dd;
 }
 
@@ -83,16 +84,17 @@ body {
     text-align: center;
     line-height: 25px;
     top: 19px;
-    left: 4.5rem;
+    left: 50%;
+    transform: translateX(-47%);
     color: #003049;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .text {
-        left: 3.5rem;
+        font-size: 24px;
     }
 }
 
