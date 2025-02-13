@@ -74,8 +74,11 @@ body {
     text-align: center;
     line-height: 25px;
     top: 19px;
-    left: 72px;
+    left: 4.5rem;
     color: #003049;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .heart {

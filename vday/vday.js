@@ -1,14 +1,3 @@
-// $(function(){
-//     $(".container").on("mouseenter",function(){
-//         $(".card").stop().animate({
-//             top:"-90px"
-//         },"slow");
-//     }).on("mouseleave", function(){
-//         $(".card").stop().animate({
-//             top:0
-//         }, "slow");
-//     });
-// });
 
 $(function(){
     $(".container").on({
@@ -27,6 +16,6 @@ $(function(){
         },
         touchend: function() { 
             $(this).find(".card").stop().animate({ top: "0" }, "slow");
-        }
+        } 
     });
 });
