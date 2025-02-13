@@ -4,7 +4,16 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #fae1dd;
+}
 
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
 }
 
 .container {
@@ -79,6 +88,12 @@ body {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+}
+
+@media only screen and (max-width: 600px) {
+    .text {
+        left: 3.5rem;
+    }
 }
 
 .heart {
